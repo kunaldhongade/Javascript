@@ -11,5 +11,8 @@ firstName = "Dhongade Kunal Santosh"
 console.log(firstName)
 
 var a02 = 34
+var $a = 23
+var a_b = 53
+var __ = 2
 var _a = 3
-console.log(a02, 10, _a)
+console.log(a02, $a, a_b, __, _a)
