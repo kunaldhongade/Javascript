@@ -17,10 +17,12 @@ let b00l = false
 console.log(typeof bool, bool)
 
 // 4. null 
+// null is primitive datatype is not object as typeof shows
 let nul = null
 console.log(typeof nul, nul)
 
 // 5. undefined
+// non initialized variable always undefined except const
 let un = undefined
 console.log(typeof un, un)
 
@@ -29,7 +31,10 @@ let sym = Symbol("kdk")
 console.log(typeof sym, sym)
 
 // 7. BigInt
+// bigint can performs operations with bigint only
 let bi = BigInt(1232342343244)
+let bi2 = 12345678912345n
+// console.log(Number.MAX_SAFE_INTEGER)
 console.log(typeof bi, bi)
 
 // 8. Object
