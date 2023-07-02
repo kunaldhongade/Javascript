@@ -23,6 +23,6 @@ switch (day) {
         console.log("sunday");
         break;
     default:
-        console.log("Holiday")
+        console.log("Invalid Day bro!")
         break;
 }
