@@ -11,9 +11,12 @@ TeamNaruto.push("Killer Bee")
 
 console.log(TeamNaruto)
 
-let poppedMem = Array(TeamNaruto.pop())
-poppedMem[1] = TeamNaruto.pop()
-poppedMem[2] = TeamNaruto.pop()
+// let poppedMem = Array(TeamNaruto.pop())
+// poppedMem[1] = TeamNaruto.pop()
+// poppedMem[2] = TeamNaruto.pop()
+
+let poppedMem = [].concat(TeamNaruto.pop())
+poppedMem = [].concat(...poppedMem, TeamNaruto.pop())
 console.log(poppedMem)
 
 // shift
