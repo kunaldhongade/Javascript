@@ -9,3 +9,5 @@ let bestTeam = [7, 9, 10]
 console.log(bestTeam[0])
 
 console.log(typeof bestTeam, Array.isArray(team7))
+
+// to check variable is array Array.isArray

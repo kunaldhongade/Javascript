@@ -13,8 +13,8 @@ let obj = {
 
 console.log(typeof obj)
 console.log(obj)
-console.log(obj.hinata)
-console.log(obj["kunal"])
+console.log(obj.hinata) // dot notation
+console.log(obj["kunal"]) // bracket notation
 
 obj.Naruto = ["Uzumaki", "Namikaze"]
 
@@ -23,3 +23,6 @@ for (clans of obj.hinata) {
 }
 
 console.log(obj)
+
+// obj.key vs obj[key] square brackets works as variable but . works soles like its keys
+// so whenever we wanted to use variable as key we should use [] bras
