@@ -6,8 +6,10 @@ const users = [
 
 const [user1, user2, user3] = users
 
-console.log(user2);
+console.log(user1);
 
 const [{ firstName: usr1FN }, { userId }, { lastName }] = users // first we destructure array and then object
 console.log(usr1FN, userId, lastName)
 
+const [{ userId: uID, firstName: uName }, ,] = users;
+console.log(uID, uName)
