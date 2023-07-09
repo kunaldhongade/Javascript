@@ -1,3 +1,4 @@
+// function declaration
 // sum of three numbers
 function sumThree(num1, num2, num3) {
     return num1 + num2 + num3
@@ -35,3 +36,13 @@ function findTarget(array, target) {
     return -1
 }
 console.log(findTarget([1, 2, 3, 4, 5, 0], 8));
+
+
+
+// anonymous function
+//  function expression
+
+const name = function () {
+    console.log("kunal dhongade")
+}
+name()
