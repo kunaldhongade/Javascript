@@ -13,6 +13,7 @@ const isPositive = num => {
     return num >= 0
 }
 
+// one line only returns
 const isNegative = num => num <= 0
 
 console.log(isPositive(2), isNegative(-2))

@@ -1,4 +1,4 @@
-// function declaration
+// function de
 // sum of three numbers
 function sumThree(num1, num2, num3) {
     return num1 + num2 + num3
