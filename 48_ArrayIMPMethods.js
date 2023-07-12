@@ -45,15 +45,3 @@ users.forEach(function (user) {
 // }
 
 
-// map method
-
-// map method is array method 
-
-const numbers = [2, 3, 4, 5]
-
-const square = function (num) {
-    return num * num
-}
-
-numbers.map(square) // as input call back function gheto
-
