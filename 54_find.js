@@ -1,3 +1,4 @@
+// as name suggest find method is used to find something in array something means what we pass in call back then if callback return true method returns that element
 const Array1 = ["hello", "kunal", "ho8w", "are9", "You"]
 
 const isLength3 = (string) => {
