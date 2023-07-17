@@ -11,8 +11,9 @@ const userMethods = {
 }
 
 function createUser(firstName, lastName, age, email, address) {
-    const user = new Object(userMethods) // this is proto chaining. and now we can access all methods inside userMethods 
+    // const user = new Object(userMethods) // this create new object user and add's all userMethods's properties to user object
 
+    const user = Object.create(userMethods) // this is proto chaining. and now we can access all methods inside userMethods 
     user.firstName = firstName
     user.lastName = lastName
     user.age = age
