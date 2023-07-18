@@ -39,4 +39,4 @@ class Dog extends Animal {
 const tommy = new Dog("tommy", 3, 45)
 console.log(tommy.isAdult())
 console.log(tommy.run())
-console.log(tommy.eat(-3))
+console.log(tommy.eat())
