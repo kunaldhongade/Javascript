@@ -13,8 +13,10 @@
 
 console.log(this)
 console.log(window)
-console.log(firstName)
+console.log(firstName) // firstName var created
 var firstName = "kunal"
+console.log(firstName)
+console.log(this)
 
 /** 
  * 1. Code is Read by Compiler
@@ -43,9 +45,9 @@ var firstName = "kunal"
  *      determine scope of var
  * 
  * 2st execute phase
- *      In Js code executes inside execution context
- *      to execute code we need to create execution context
- *      First created execution context called global execution context
+ *      - In Js code executes inside execution context
+ *      - to execute code we need to create execution context
+ *      - First created execution context called global execution context
  * 
  * ** Global Execution Context(GEC) **
  *      two phases of GEC
@@ -53,7 +55,14 @@ var firstName = "kunal"
  *          2. code execution Phase
  * // aaplya code chi 1st line execute honyachya aadhi Global execution context create hoto 
  * 
- *      1. Creation PHase
- *          variable with var gets value of undefined
- *          after global execution context is created 
+ *      1. Creation PHase (Present in Global Memory)
+ *          - variable with var gets value of undefined
+ *          - after global execution context is created
+ *          - then this value is set to window object (in browser)
+ *          - eg. window : {} , firstName : undefined , this : window
+ *          - code browser madhe run kartana window obj present asto run karnya sathi aani this madhe window object cha ref asto
+ *          - Javascript is a synchronous programming lang means works on line by line working
+ *          - Javascript is single threaded programming lang means aka line run zalyavarach dusari line execute hoin 
+ *          - firstly single thread completes its execution and then run other
+ *          - code run line by line
  * **/
