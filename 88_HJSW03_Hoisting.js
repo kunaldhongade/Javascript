@@ -14,6 +14,8 @@ var lastName = "Dhongade"
 var fullName = firstName + " " + lastName
 console.log(fullName)
 
+// hoisting means adding variable to memory before initialization
+
 /**
  * 
  * Hoisting in JavaScript
