@@ -11,8 +11,21 @@ const myFunction = function () {
 }
 
 /**
+ * 
+ * compilation phase
+ *  Error checking
+ *  Scope 
  *      1. Global Scope
  *          - Js knows whats in the code before compilation / execution
+ *          eg. firstName, lastName
  *          - scope decided
+ *      2. function scope
+ *          eg. var1, var2
+ * 
+ * Code Execution 
+ *      In order to execute Js code Js creates Execution Context
+ * 
+ *      1. Creation Phase
+ *          Global Execution context
  *      
  */
