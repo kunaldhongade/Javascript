@@ -3,9 +3,24 @@ function myFunc(power) {
         return number ** power
     }
 }
-const cube = myFunc(2)
-const ans = cube(3)
+const square = myFunc(2)
+const ans = square(3)
 console.log(ans)
+
+
+// const Func = (power) => {
+//     return (number) => number ** power
+// }
+
+const Func = (power) => (number) => number ** power
+
+const cube = Func(3)
+const ans1 = cube(4)
+console.log(ans1)
+
+const tetra = Func(4)
+const ans2 = tetra(7)
+console.log(ans2)
 
 /*
     Global Execution Context
@@ -52,3 +67,5 @@ console.log(ans)
             1. returning number ** power
 
 */
+
+
