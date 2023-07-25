@@ -20,7 +20,14 @@ console.log(ans)
         execution phase
 
             1. function already present in memory
-            2. square is initialized with myFunction call
+
+            2. square is initialized with myFunction call so square contained returned function of myFunction with power (local var) whole is called closures
+
+            3. Calling square to assign value to ans
+            ans is function returned by square
+            square() returns num**power to ans
+
+            4. console.log(ans)
 
     Function Execution context - myFunction
 
@@ -29,5 +36,19 @@ console.log(ans)
             function
 
         code execution
-            
+            1. return function with power (local variables) lexical memory environment
+
+            after return FEC will be deleted from CAllStack
+
+    Function Execution context - Square
+
+        Local Memory creation
+            1. args:  [number]
+            2. number: number
+
+            it also access power because of closure
+
+        Code execution
+            1. returning number ** power
+
 */
