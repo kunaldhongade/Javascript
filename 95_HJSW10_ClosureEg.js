@@ -50,6 +50,7 @@ ans()
             arguments: []
 
         C EX
-            arg, varA, Var
+            arg, varA, VarB
+
 
 */
