@@ -7,27 +7,32 @@
 
     <!-- <script src="./01_document.js" defer></script> -->
     <!-- <script src="./02_getElementById.js" defer></script> -->
-    <script src="./03_querySelecter.js" defer></script>
+    <!-- <script src="./03_querySelecter.js" defer></script> -->
+    <!-- <script src="./04_changeText.js" defer></script> -->
+    <!-- <script src="./05_changeStyleOfElement.js" defer></script> -->
+    <script src="./06_getSetAttribute.js" defer></script>
 
     <title>DOM</title>
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="nav container">
         <h1 class="logo">Website</h1>
         <ul class="nav-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Todo</a></li>
-          <li><a href="#">Sign Up</a></li>
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#todo">Todo</a></li>
+          <li class="nav-item"><a href="#signup">Sign Up</a></li>
         </ul>
       </nav>
       <div class="headline">
-        <h2 id="main-heading">Manage your tasks</h2>
+        <h2 id="main-heading">
+          Manage your tasks <span style="display: none">Hello</span>
+        </h2>
         <button class="btn btn-headline">Learn More</button>
       </div>
     </header>
-    <section class="section-todo container">
+    <section class="section-todo container" id="todo">
       <h3>Your plans for today!</h3>
       <form action="" class="form-todo">
         <input type="text" name="" id="" placeholder="Add Todo" />
@@ -35,7 +40,7 @@
       </form>
     </section>
 
-    <section class="section-signup container">
+    <section class="section-signup container" id="signup">
       <h3>Sign UP</h3>
       <form class="signup-form">
         <div class="from-group">
