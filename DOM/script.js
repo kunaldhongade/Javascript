@@ -53,5 +53,12 @@
 
     A script that will be downloaded in parallel to parsing the page, and executed after the page has finished parsing
 
-    
+    - browser parse html and load js file parallel
+    - after successfully loading of js file 
+    - browser simply completes its parsing and after that it will starts execution of js file
+
+    so we reduce time by parallel loading and js will not encounter any err 
+
+    so its best way to link js file
+
 */
