@@ -56,5 +56,3 @@ console.log(headElementNode.nextSibling.nextSibling) // body
 
 console.log(headElementNode.nextElementSibling) // body
 console.log(headElementNode.childNodes) // NodeList(5) [text, title, text, script, text]
-
-
