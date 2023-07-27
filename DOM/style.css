@@ -85,6 +85,11 @@ a {
     text-align: center;
 }
 
+.borderSection {
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+
 .form-todo {
     /* border: 2px solid red; */
 
