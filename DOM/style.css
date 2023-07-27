@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300;400;500;600&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,6 +16,11 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .header {
@@ -111,7 +116,8 @@ a {
     text-align: center;
     margin-top: 5rem;
     /* background: rgb(243, 240, 240); */
-    background: rgb(204, 214, 226);
+    /* background: rgb(96, 99, 102); */
+    background: whitesmoke;
     padding: 1rem;
 }
 
