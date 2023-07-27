@@ -117,6 +117,22 @@ a {
     font-weight: bold;
 }
 
+.todo-list {
+    text-align: left;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+
+.todo-list li {
+    padding: 0.7rem;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    background: whitesmoke;
+    color: gray;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
 .section-signup {
     text-align: center;
     margin-top: 5rem;
