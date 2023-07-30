@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.box {
+    min-width: 100px !important;
+    min-height: 100px;
+    padding: 5rem;
+    /* color: white; */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.grandparent {
+    background: rgb(211, 117, 255);
+
+    color: black;
+}
+
+.parent {
+    background: rgb(178, 66, 206);
+
+
+}
+
+.child {
+    background-color: rgb(159, 77, 252);
+
+
+}

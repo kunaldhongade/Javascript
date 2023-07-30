@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./28_eventBubblingCapturing.css" />
-    <script src="./28_eventBubblingCapturing.js"></script>
+    <!-- <script src="./28_eventBubblingCapturing.js" defer></script> -->
+    <script src="./29_eventDeligation.js" defer></script>
     <title>Event Bubbling | Capturing | Delegation</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="grandparent box">
+        grandparent
+        <div class="parent box">
+          parent
+          <div class="child box">child</div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
