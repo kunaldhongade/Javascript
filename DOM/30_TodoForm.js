@@ -2,7 +2,6 @@ const todoForm = document.querySelector(".form-todo")
 const todoInput = document.querySelector(".form-todo input[type = 'text']")
 const todoList = document.querySelector(".todo-list")
 
-
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault() // this stop's page from reload automatically
     const newTodoText = todoInput.value
