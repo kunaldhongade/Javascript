@@ -6,7 +6,9 @@
     so if we have all things made promise then value will be fulfilled
 */
 
-const bucket = ['coffee', 'chips', 'vegetables', 'salt', 'rice']
+console.log("script start")
+// const bucket = ['coffee', 'chips', 'vegetables', 'salt', 'rice']
+const bucket = ['coffee', 'chips', 'vegetables', 'rice']
 
 // promise represent's a value we don't know now but we know in future
 // at time of promise
@@ -36,6 +38,9 @@ const friedRicePromise = new Promise((resolve, reject) => {
 })
 //  produce
 
+setTimeout(() => {
+    console.log("hello from setTimeout 1")
+}, 0);
 
 // consume promise
 // then takes input as callback function
@@ -44,6 +49,9 @@ const friedRicePromise = new Promise((resolve, reject) => {
 // inside then we can send two callback function
 // first one for resolve and another for reject
 
+// this then work is done by browser api
+// this is consume by browser
+// jab tak script end nahi hogi tab tak ye kam nahi hoga
 friedRicePromise.then(
     // jab promise resolve hoga
     (myFriedRice) => {
@@ -62,3 +70,44 @@ friedRicePromise.then(
 // promise chaining
 // catch works like passing second callback to then
 
+setTimeout(() => {
+    console.log("hello from setTimeout")
+}, 0);
+
+for (let i = 0; i <= 100; i++) {
+    console.log(i, Math.random())
+}
+
+console.log("script ends")
+
+/*
+
+Execution
+
+1. script start
+2. array in memo
+3. promise object array like {with status and its value}
+
+in Browser
+    Promise consume by browser
+    browser works with the Js to complete work
+
+then method (promise) add's in microtask queue
+
+Event loop waits for GEC to complete its work and then call stack become empty
+
+after that event loop allows then to be in execution
+
+setTimeout will be presented in callback queue
+
+now  firstly
+
+5. for loop will be executed
+6. script end's
+
+then 
+7. Microtask has higher priority than callback queue
+    promise will be executed
+8. after microtask queue then call back queue will be executed
+    settimeout will be executed
+*/
