@@ -34,7 +34,7 @@ const xhr = new XMLHttpRequest() // creating obj
 // on our api or any other 
 // console.log(xhr)
 
-console.log(xhr.readyState)
+// console.log(xhr.readyState)
 
 // step 1
 
@@ -48,11 +48,23 @@ xhr.open("GET", URL) // always in capital this is async work
 
 // browser call this function when its readystate changes
 
-console.log(xhr.readyState)
+// console.log(xhr.readyState)
 
-xhr.onreadystatechange = function () {
-    console.log(xhr.readyState)
-}
+// xhr.onreadystatechange = function () { // runs every time when state changes
+//     // console.log(xhr.readyState)
+
+//     // we do not get response til readystate becomes 4
+//     // response type always in string
+
+//     if (xhr.readyState === 4) {
+//         console.log(xhr)
+//         const response = xhr.response
+//         const data = JSON.parse(response)
+//         console.log(data)
+//         console.log(typeof data)
+//     }
+// }
+// onreadystatechange always runs when state changes
 
 /*
 Value	State	               Description
@@ -67,6 +79,22 @@ Value	State	               Description
 
 4	    DONE	                The operation is complete.
 
+
+http status code helps us to know what vent wrong
+
+wrong url 404
+server err 5xx
+
 */
+// this function runs only when readystate become 4
+xhr.onload = function () { // runs if readystate 4
+    console.log(xhr.readyState)
+    const response = xhr.response
+    const data = JSON.parse(response)
+    console.log(data)
+}
+
 
 xhr.send()
+
+
