@@ -14,4 +14,18 @@ fetch(URL, {
         'Content-type': 'application/json; charset=UTF-8',
     },
 })
-    .then
+    .then(response => {
+        if (response.ok) {
+            return response.json()
+        }
+        else {
+            throw new Error("something went wrong!!")
+        }
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    .catch(err => {
+        console.log("inside catch")
+        console.log(err)
+    })
